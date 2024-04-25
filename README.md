@@ -6,6 +6,6 @@
 
 ---
 
-!{avatar} (https://tinyurl.com/ye2yjjn7)
+![avatar](https://tinyurl.com/2kmk5hvy)
 
-{adso files DRIVE}(https://tinyurl.com/wnkk334u)
+[adso files DRIVE](https://tinyurl.com/wnkk334u)
