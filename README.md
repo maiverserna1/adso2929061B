@@ -6,7 +6,7 @@
 
 ---
 
-![avatar](https://tinyurl.com/2kmk5hvy)
+![avatar](https://tinyurl.com/36eyn9s9)
 
  ID | THEME | DESCRIPTION                            |
  ---| ----- | -----------                            |
