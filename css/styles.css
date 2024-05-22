@@ -78,7 +78,7 @@ html {
 :root {
     --color-1: #fff9;
     --color-2: #0009;
-    --font-bd: Poppins, sans-serif;
+    --font-bd: "Poppins", sans-serif;
 }
 
 /* - - - - - - - - - - - - - - - - - */
@@ -91,13 +91,37 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    nav{
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        a: is(:link, :visited){
+            background-color: var(--color-2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 40px;
+            opacity: .8;
+            transition: all 0.2s ease-in;
+            width: 40px;
+            svg {
+                width: 24px;
+            }
+        }
+
+        a: is(:hover) {
+            opacity: 1;
+            transform: scale(1.12);
+        }
+    }
 
     main {
         header {
             display: flex;
             justify-content: center;
             flex-direction: column;
-            gap: 0.8rem;
+            gap: 0.6rem;
             align-items: center;
 
             h1 {
@@ -110,7 +134,7 @@ body {
                     border-radius: 50px;
                     background-color: var(--color-2);
                     color: var(--color-1);
-                    font-size: 1.4rem;
+                    font-size: 2rem;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -118,6 +142,7 @@ body {
                     width: 50px;
                 }
             }
+
             h2 {
                 font-size: 1.4rem;
                 font-weight: 600;
@@ -136,12 +161,11 @@ body {
                 color: #fff9;
                 margin: 0 auto;
                 width: 80%;
-                text-align: center;
             }
 
             img {
                 border-radius: 50%;
-                border: 8px solid var(--color-2);
+                border: 10px solid var(--color-2);
                 height: 200px;
                 object-fit: cover;
                 width: 200px;
@@ -154,45 +178,44 @@ body {
             align-items: center;
             margin-top: 2rem;
             justify-content: center;
-            gap: 1rem;
-
+            gap: 0.6rem;
             a:is(:link, :visited) {
                 border-radius: 50px;
-                background: linear-gradient(to right, #fffc, #fff2);
+                background: linear-gradient(to right, #fffc, #fff3);
                 color: var(--color-2);
                 display: flex;
                 align-items: center;
-                padding: 0.8rem;
+                padding: 0.6rem;
                 text-decoration: none;
                 transition: all 0.4s ease-in;
-                gap: 0.8;
+                gap: 0.6rem;
                 width: 240px;
+                span {
+                    border-radius: 20px;
+                    background-color: var(--color-2);
+                    color: #fff;
+                    font-weight: 600;
+                    height: 28px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 28px;
+                }
             }
 
             a:is(:hover) {
-                background-color: #fff9;
+                background-color: linear-gradient(to right, #fffe, #fff6);
                 transform: scale(1.05) translateY(-4px);
             }
-
-            span {
-                border-radius: 20px;
-                background: linear-gradient(to right, #fffe, #fff2);
-                color: var(--color-1);
-                font-weight: 600;
-                height: 28px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 28px;
-            }
         }
+
         section {
             background-color: var(--color-1);
             border-radius: 4px;
-            margin-block: 1rem;
+            margin-block: 1rem; 
             min-height: 25vh;
             width: 400px;
-        }
+        }  
     }
 }
 
@@ -200,7 +223,7 @@ body {
 /* 05 - M A I N  M E N U */
 /* - - - - - - - - - - - - - - - - - */
 body.main-menu {
-    background-color: #000000;
+    background-color: #000000
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Cpath fill='none' stroke-width='200' id='a' d='M0.74-509.63l485.39 352.65l-185.4 570.61h-599.97l-185.4-570.61L0.74-509.63 M0.74-510.87l-486.56 353.51l185.85 571.99h601.42L487.3-157.36L0.74-510.87L0.74-510.87z'/%3E%3C/defs%3E%3Cg transform='scale(0.703)' style='transform-origin:center'%3E%3Cg transform='rotate(72 0 0)' style='transform-origin:center'%3E%3Cg transform='rotate(-160 0 0)' style='transform-origin:center'%3E%3Cg transform='translate(1000 750)'%3E%3Cuse stroke='%23DFD43E' href='%23a' transform='rotate(10 0 0) scale(1.1)'/%3E%3Cuse stroke='%23ddd03c' href='%23a' transform='rotate(20 0 0) scale(1.2)'/%3E%3Cuse stroke='%23dbcd3a' href='%23a' transform='rotate(30 0 0) scale(1.3)'/%3E%3Cuse stroke='%23d8c938' href='%23a' transform='rotate(40 0 0) scale(1.4)'/%3E%3Cuse stroke='%23d6c536' href='%23a' transform='rotate(50 0 0) scale(1.5)'/%3E%3Cuse stroke='%23d4c235' href='%23a' transform='rotate(60 0 0) scale(1.6)'/%3E%3Cuse stroke='%23d1be33' href='%23a' transform='rotate(70 0 0) scale(1.7)'/%3E%3Cuse stroke='%23cfba31' href='%23a' transform='rotate(80 0 0) scale(1.8)'/%3E%3Cuse stroke='%23ccb72f' href='%23a' transform='rotate(90 0 0) scale(1.9)'/%3E%3Cuse stroke='%23cab32e' href='%23a' transform='rotate(100 0 0) scale(2)'/%3E%3Cuse stroke='%23c8b02c' href='%23a' transform='rotate(110 0 0) scale(2.1)'/%3E%3Cuse stroke='%23c5ac2a' href='%23a' transform='rotate(120 0 0) scale(2.2)'/%3E%3Cuse stroke='%23c3a829' href='%23a' transform='rotate(130 0 0) scale(2.3)'/%3E%3Cuse stroke='%23c0a527' href='%23a' transform='rotate(140 0 0) scale(2.4)'/%3E%3Cuse stroke='%23bea126' href='%23a' transform='rotate(150 0 0) scale(2.5)'/%3E%3Cuse stroke='%23BB9E24' href='%23a' transform='rotate(160 0 0) scale(2.6)'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     background-attachment: fixed;
     background-size: cover;
@@ -215,4 +238,5 @@ body.emmet {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' %3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%231EA10C'/%3E%3Cstop offset='1' stop-color='%231B5A1C'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpattern id='b' width='24' height='24' patternUnits='userSpaceOnUse'%3E%3Ccircle fill='%231BFF20' cx='12' cy='12' r='12'/%3E%3C/pattern%3E%3Crect width='100%25' height='100%25' fill='url(%23a)'/%3E%3Crect width='100%25' height='100%25' fill='url(%23b)' fill-opacity='0.1'/%3E%3C/svg%3E");
     background-attachment: fixed;
     background-position: center;
+    background-size: cover;
 }
