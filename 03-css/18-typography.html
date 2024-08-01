@@ -14,20 +14,27 @@
     <title>13- box model</title>
     <link rel="stylesheet" href="../css/styles.css">
     <style>
-        main ul li {
-            color: #fffb;
+        @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+        ul li {
+            color: #fff9;
         }
-        div.box {
-            border: 4px dashed #0007;
-            background-color: #0003;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        .color-crimson {
+            color: crimson;
+        }
+        .ffamily-sacramento {
+            font-family: "Sacramento", cursive;
+        }
+        .fsize-4rem {
             font-size: 4rem;
-            padding: 1rem;
-            height: 200px;
-            margin: 2rem auto;
-            width: 320px;
+        }
+        .fweight-100 {
+            font-weight: 100;
+        }
+        .fweight-400 {
+            font-weight: 400;
+        }
+        .fweight-800 {
+            font-weight: 800;
         }
     </style>
 </head>
@@ -39,24 +46,25 @@
     </nav>
     <main>
         <header>
-            <h1>13- box model</h1>
-            <p>
-                Is essentially a box that wraps around every html element.
-            </p>
+            <h1>18- Typography</h1>
             <ul>
-                <li>Border</li>
-                <li>Background</li>
-                <li>Content</li>
-                <li>Height</li>
-                <li>Margin</li>
-                <li>Padding</li>
-                <li>Width</li>
+                <li>Color</li>
+                <li>Family</li>
+                <li>Size</li>
+                <li>Weight</li>
             </ul>
         </header>
         <section>
-           <div class="box">
-             BOX 📦
-           </div>
+            <h3>Color:</h3>
+            <p class="color-crimson">Lorem Ipsum Dolor</p>
+            <h3>Font Family:</h3>
+            <p class="ffamily-sacramento">Lorem Ipsum Dolor</p>
+            <h3>Font Size:</h3>
+            <p class="ffamily-sacramento fsize-4rem">Lorem Ipsum</p>
+            <h3>Font Weight:</h3>
+            <p class="fweight-100">Lorem Ipsum Dolor</p>
+            <p class="fweight-400">Lorem Ipsum Dolor</p>
+            <p class="fweight-800">Lorem Ipsum Dolor</p>
         </section>
     </main>
 </body>
